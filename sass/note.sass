@@ -1,0 +1,50 @@
+@import "color"
+
+// note box
+.page
+    .note
+        margin-bottom: 15px
+        p:first-child
+            margin-top: 0
+        p:last-child
+            margin-bottom: 0
+    .note-icon::before
+        content: ""
+        float: left
+        margin-right: 5px
+        position: relative
+    .note-icon-large::before
+        height: 72px
+        width: 72px
+        background-size: 72px
+    .note-icon-small::before
+        height: 24px
+        width: 24px
+        background-size: 24px
+    .note-icon::after
+        content: ""
+        display: block
+        clear: both
+    .note-block
+        padding: 4px 12px
+        border-left-style: solid
+        border-left-width: 6px
+    .note-neutral
+        background-color: $note-neutral-background
+        border-left-color: $note-neutral-border
+    .note-ok
+        background-color: $note-ok-background
+        border-left-color: $note-ok-border
+    .note-warning
+        background-color: $note-warning-background
+        border-left-color: $note-warning-border
+    .note-error
+        background-color: $note-error-background
+        border-left-color: $note-error-border
+    .note-info
+        background-color: $note-info-background
+        border-left-color: $note-info-border
+    .note-icon-ok::before
+        background-image: url("/note/ok.png")
+    .note-icon-warning::before
+        background-image: url("/note/warning.png")

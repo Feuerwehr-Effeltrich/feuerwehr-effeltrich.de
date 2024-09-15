@@ -1,0 +1,7 @@
+{% set fullpath = page.path ~ path %}
+{% set image_path = resize_image(path=fullpath, width=800, height=600, op = "fit") %}
+<p>
+    <a href="{{ path }}" target=”_blank”>
+        <img src="{{ image_path.url }}" {% if alt %}alt="{{ alt }}"{% endif %}>
+    </a>
+</p>

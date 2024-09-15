@@ -1,0 +1,33 @@
+# base_url = "https://feuerwehr-effeltrich.de"
+base_url = "https://feuerwehr.hesiboch.de"
+compile_sass = true
+build_search_index = true
+
+default_language = "de"
+theme = "toucan"
+minify_html = true
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+author = "Feuerwehr Effeltrich"
+
+[markdown]
+highlight_code = false
+lazy_async_image = true
+
+[slugify]
+paths_keep_dates = true
+
+[search]
+include_description = true
+include_date = true
+
+[extra]
+title = "Freiwillige Feuerwehr Effeltrich"
+title_pic = "/logo-hq.png"
+description = "Herzlich willkommen bei der Freiwilligen Feuerwehr Effeltrich"
+
+noindex = ["/impressum/"]
+navbar = ["einsaetze", "wichtige-links", "verein", "kontakt"]
+
+[extra.theme]
+read_more = "Weiterlesen"
