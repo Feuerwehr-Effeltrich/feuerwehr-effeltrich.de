@@ -1,5 +1,4 @@
-# base_url = "https://feuerwehr-effeltrich.de"
-base_url = "https://feuerwehr.hesiboch.de"
+base_url = "/"
 compile_sass = true
 build_search_index = true
 
