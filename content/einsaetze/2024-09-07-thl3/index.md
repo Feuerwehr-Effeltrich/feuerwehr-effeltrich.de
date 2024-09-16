@@ -6,7 +6,7 @@ description = "Auto im Graben zwischen Effeltrich und Gaiganz"
 image = "Einsatzstelle.jpg"
 +++
 
-{{ content_image(path="Einsatzstelle.jpg") }}
+{{ content_image(path="Einsatzstelle.jpg", alt="Einsatzstelle") }}
 
 In der Nacht von Freitag auf Samstag ereignete sich auf der Straße zwischen Effeltrich und Gaiganz ein schwerer Verkehrsunfall.
 Ein Fahrzeug kam von der Fahrbahn ab und landete auf dem Dach im stark bewachsenen, deutlich tieferliegenden Graben neben der Straße.
@@ -23,6 +23,6 @@ Feuerwehr Kunreuth - sowie Polizei & Rettungsdienst
 
 Danke an alle eingesetzten Kräfte 🚒🚑🚓
 
-{{ content_image(path="Unfallauto.jpg") }}
+{{ content_image(path="Unfallauto.jpg", alt="Das verunfallte Auto im Graben") }}
 
-{{ content_image(path="Spur.jpg") }}
+{{ content_image(path="Spur.jpg", alt="Die Spur des Unfallwagens") }}
