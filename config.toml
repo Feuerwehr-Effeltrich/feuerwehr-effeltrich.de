@@ -22,7 +22,7 @@ include_date = true
 
 [extra]
 title = "Freiwillige Feuerwehr Effeltrich"
-title_pic = "/logo-hq.png"
+title_pic = "/logo-lq.webp"
 description = "Herzlich willkommen bei der Freiwilligen Feuerwehr Effeltrich"
 
 noindex = ["/impressum/"]

@@ -1,0 +1,6 @@
+{% set meta = get_image_metadata(path=path) %}
+{% if width and height %}
+    {% set image = resize_image(path=path, width=width, height=height, op = "fit") %}
+    {% set path = image.url %}
+{% endif %}
+<p><img src="{{ path }}" {% if alt %}alt="{{ alt }}"{% endif %} width="100%" height="100%"></p>
