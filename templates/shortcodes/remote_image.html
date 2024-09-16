@@ -1,5 +1,1 @@
-{% if width and height %}
-    {% set image = resize_image(path=path, width=width, height=height, op = "fit") %}
-    {% set path = image.url %}
-{% endif %}
 <p><img src="{{ path }}" {% if alt %}alt="{{ alt }}"{% endif %} width="100%" {% if width and height %}style="aspect-ratio: {{width}}/{{height}};"{% endif %}></p>
