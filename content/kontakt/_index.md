@@ -17,6 +17,6 @@ template = "index.html"
 
 #### 2. Vorsitzender: [Nico Wirth](mailto:vorstand@feuerwehr-effeltrich.de)
 
-#### Schriftführer: [Thomas Stark](schriftfuehrer@feuerwehr-effeltrich.de)
+#### Schriftführer: [Thomas Stark](mailto:schriftfuehrer@feuerwehr-effeltrich.de)
 
-#### Kassier: [Christoph Steiner](kassier@feuerwehr-effeltrich.de)
+#### Kassier: [Christoph Steiner](mailto:kassier@feuerwehr-effeltrich.de)
