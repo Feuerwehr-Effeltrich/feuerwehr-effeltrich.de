@@ -3,10 +3,10 @@ title = "THL 3: Schwerer Verkehrsunfall"
 description = "Auto im Graben zwischen Effeltrich und Gaiganz"
 
 [extra]
-image = "Einsatzstelle.jpg"
+image = "Einsatzstelle.webp"
 +++
 
-{{ content_image(path="Einsatzstelle.jpg", alt="Einsatzstelle") }}
+{{ content_image(path="Einsatzstelle.webp", alt="Einsatzstelle") }}
 
 In der Nacht von Freitag auf Samstag ereignete sich auf der Straße zwischen Effeltrich und Gaiganz ein schwerer Verkehrsunfall.
 Ein Fahrzeug kam von der Fahrbahn ab und landete auf dem Dach im stark bewachsenen, deutlich tieferliegenden Graben neben der Straße.
@@ -23,6 +23,6 @@ Feuerwehr Kunreuth - sowie Polizei & Rettungsdienst
 
 Danke an alle eingesetzten Kräfte 🚒🚑🚓
 
-{{ content_image(path="Unfallauto.jpg", alt="Das verunfallte Auto im Graben") }}
+{{ content_image(path="Unfallauto.webp", alt="Das verunfallte Auto im Graben") }}
 
-{{ content_image(path="Spur.jpg", alt="Die Spur des Unfallwagens") }}
+{{ content_image(path="Spur.webp", alt="Die Spur des Unfallwagens") }}

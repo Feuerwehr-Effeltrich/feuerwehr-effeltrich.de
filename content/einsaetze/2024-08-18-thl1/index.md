@@ -3,10 +3,10 @@ title = "THL 1: Verkehrslenkung"
 description = "Unterstützung der Polizei nach Motorradunfall"
 
 [extra]
-image = "Einsatzstelle.jpg"
+image = "Einsatzstelle.webp"
 +++
 
-{{ content_image(path="Einsatzstelle.jpg", alt="Einsatzstelle") }}
+{{ content_image(path="Einsatzstelle.webp", alt="Einsatzstelle") }}
 
 Nach dem Sturz eines Motorradfahrers wurden wir am Sonntag Nachmittag zur Absicherung der Unfallstelle alarmiert.
 Die Staatsstraße 2243 Richtung Neunkirchen wurde für die Unfallaufnahme und Bergung des Kraftfahrzeugs halbseitig gesperrt. Der Verkehr wurde wechselseitig an der Unfallstelle vorbeigeleitet.
