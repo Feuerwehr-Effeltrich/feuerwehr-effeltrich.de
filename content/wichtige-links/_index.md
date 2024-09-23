@@ -9,7 +9,7 @@ template = "index.html"
 
 ### [Landesfeuerwehrverband Bayern](https://www.lfv-bayern.de/)
 
-### [NINA](http://www.bbk.bund.de/DE/NINA/Warn-App_NINA.html)
+### [NINA](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Warn-App-NINA/warn-app-nina_node.html)
 
 Die App des Bundesamts für Bevölkerungsschutz und Katastrophenhilfe informiert Sie über Gefahren in dem Gebiet, in dem Sie sich gerade aufhalten. Sie können aber auch Warnmeldungen aus bestimmten Gebieten abonnieren. Verhaltenshinweise und allgemeine Notfalltipps von Experten helfen Ihnen dabei, sich auf mögliche Gefahren vorzubereiten. So können Sie sich und andere besser schützen.
 
