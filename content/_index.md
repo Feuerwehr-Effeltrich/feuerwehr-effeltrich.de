@@ -9,7 +9,7 @@ auf der Website der Freiwilligen Feuerwehr Effeltrich!
 Aktuell im Einsatz befinden sich ein HLF-10 (42/1) von Lentner, sowie ein MTW (14/1) von Compoint.
 
 {{ image(path="/images/FWGH.webp", alt="Gerätehaus der Feuerwehr Effeltrich mit Fahrzeugen HLF 42/1 und MTW 14/1")}}
-<!-- {{ image(path="/images/FWGH.jpg", width=914, height=686)}} -->
+<!-- { { image(path="/images/FWGH.webp", width=914, height=686)} } -->
 
 # Aktuelle Warnungen
 
