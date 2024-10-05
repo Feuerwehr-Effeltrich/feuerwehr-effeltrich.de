@@ -24,7 +24,7 @@
         {% set image_path = article.path ~ article.extra.image %}
         {% set image = resize_image(path=image_path, width=800, height=400, op = "fit") %}
         <a href="{{article.permalink}}">
-        <img src="{{ image.url }}" width="100%" style="aspect-ratio: 2/1;">
+        <img src="{{ image.url }}" alt="Einsatzbild" width="100%" style="aspect-ratio: 2/1;">
         </a>
         <br>
       {% endif %}
