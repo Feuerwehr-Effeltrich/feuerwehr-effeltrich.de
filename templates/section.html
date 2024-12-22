@@ -10,27 +10,31 @@
     {{ section.content | safe }}
   </section>
   {% set feed = section.pages %}
+{% else %}
 
-  {% else %}
+  {% if paginator %}
+    {% set section = paginator %}
+  {% endif %}
+
   {% set article = section.pages | first %}
   {% set feed = section.pages | slice(start=1) %}
   {% if article %}
-  <section class="card preview">
-      <div class="date">{{ article.date | date(format="%d.%m.%Y")}}</div>
-      <h1><a href="{{article.permalink}}">{{ article.title }}</a></h1>
-      <div>{{ article.description }}</div>
-      <br>
-      {% if article.extra.image %}
-        {% set image_path = article.path ~ article.extra.image %}
-        {% set image = resize_image(path=image_path, width=800, height=400, op = "fit") %}
-        <a href="{{article.permalink}}">
-        <img src="{{ image.url }}" alt="Einsatzbild" width="100%" style="aspect-ratio: 2/1;">
-        </a>
+    <section class="card preview">
+        <div class="date">{{ article.date | date(format="%d.%m.%Y")}}</div>
+        <h1><a href="{{article.permalink}}">{{ article.title }}</a></h1>
+        <div>{{ article.description }}</div>
         <br>
-      {% endif %}
-      <div><a class="button" href="{{article.permalink}}">{{config.extra.theme.read_more}}</a></div>
-      <br>
-  </section>
+        {% if article.extra.image %}
+          {% set image_path = article.path ~ article.extra.image %}
+          {% set image = resize_image(path=image_path, width=800, height=400, op = "fit") %}
+          <a href="{{article.permalink}}">
+          <img src="{{ image.url }}" alt="Einsatzbild" width="100%" style="aspect-ratio: 2/1;">
+          </a>
+          <br>
+        {% endif %}
+        <div><a class="button" href="{{article.permalink}}">{{config.extra.theme.read_more}}</a></div>
+        <br>
+    </section>
   {% endif %}
 {% endif %}
 
@@ -38,6 +42,11 @@
 {% if feed %}
 <section class="card feed">
   {{ macros::feed(feed=feed) }}
+</section>
+{% endif %}
+{% if paginator %}
+<section>
+  {{ macros::pagenav(paginator=paginator) }}
 </section>
 {% endif %}
 
