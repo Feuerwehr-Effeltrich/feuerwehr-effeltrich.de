@@ -26,7 +26,14 @@
 </head>
 <body>
   <div id="container">
-    <header><a href="{{config.base_url}}"><h1><img id="title_pic" alt="" src="{{config.extra.title_pic}}"/>{{config.extra.title}}</h1></a></header>
+    <header>
+      <a href="{{config.base_url}}">
+        <div class="centerflex">
+          <h1><img id="title_pic" alt="" src="{{config.extra.title_pic}}"/></h1>
+          <h1>{{config.extra.title}}</h1>
+        </div>
+      </a>
+    </header>
     <nav>{{ macros::nav() }}</nav>
     <main>{% block main %}<section class="card page">{{ section.content | safe }}</section>{% endblock main %}</main>
     <footer>{% include "footer.html" %}</footer>

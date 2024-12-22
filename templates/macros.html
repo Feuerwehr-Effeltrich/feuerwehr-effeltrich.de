@@ -60,10 +60,16 @@
 {# === PAGENAV ===#}
 {% macro pagenav(paginator) %}
 <div class="centerflex">
-  <a class="button {% if not paginator.previous %}deactivated{% endif %}" href="{{ paginator.first }}">Erste</a>
-  <a class="button {% if not paginator.previous %}deactivated{% endif %}" href="{{ paginator.previous }}">Vorherige</a>
-  Seite {{ paginator.current_index }} von {{ paginator.number_pagers }}
-  <a class="button {% if not paginator.next %}deactivated{% endif %}" href="{{ paginator.next }}">Nächste</a>
-  <a class="button {% if not paginator.next %}deactivated{% endif %}" href="{{ paginator.last }}">Letzte</a>
+  <div class="gapped">
+    <a class="button {% if not paginator.previous %}deactivated{% endif %}" href="{{ paginator.first }}">&lt;&lt;</a>
+    <a class="button {% if not paginator.previous %}deactivated{% endif %}" href="{{ paginator.previous }}">&lt;</a>
+  </div>
+  <div>
+    Seite {{ paginator.current_index }} von {{ paginator.number_pagers }}
+  </div>
+  <div class="gapped">
+    <a class="button {% if not paginator.next %}deactivated{% endif %}" href="{{ paginator.next }}">&gt;</a>
+    <a class="button {% if not paginator.next %}deactivated{% endif %}" href="{{ paginator.last }}">&gt;&gt;</a>
+  </div>
 </div>
 {% endmacro pagenav %}

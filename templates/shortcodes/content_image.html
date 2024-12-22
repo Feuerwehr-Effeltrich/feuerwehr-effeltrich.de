@@ -11,6 +11,6 @@
 {% set image_path = resize_image(path=fullpath, width=rwidth, height=rheight, op = "fit") %}
 <p>
     <a href="{{ path }}" target=”_blank”>
-        <img src="{{ image_path.url }}" {% if alt %}alt="{{ alt }}"{% endif %} decoding="async" loading="lazy" width="100%" {% if width and height %}style="aspect-ratio: {{width}}/{{height}};"{% endif %}>
+        <img src="{{ image_path.url }}" {% if alt %}alt="{{ alt }}"{% endif %} decoding="async" {% if not nolazy %}loading="lazy"{% endif %} width="100%" {% if width and height %}style="aspect-ratio: {{width}}/{{height}};"{% endif %}>
     </a>
 </p>

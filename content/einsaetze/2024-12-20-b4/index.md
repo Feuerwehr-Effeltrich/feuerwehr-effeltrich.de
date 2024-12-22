@@ -1,5 +1,5 @@
 +++
-title = "Brand 4: Industrie/Gewerbe"
+title = "Brand 4: Industrie / Gewerbe"
 description = "Gewerbegebiet bei Kersbach"
 
 [extra]
