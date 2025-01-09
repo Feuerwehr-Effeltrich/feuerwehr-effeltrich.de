@@ -1,14 +1,12 @@
 +++
 title = "THL 1: Baum auf Straße"
-description = "Zwischen Kersbach und Effeltrich"
+description = "Berufsverkehr blockiert"
 
 [extra]
 image = "Baum.webp"
 +++
 
 {{ content_image(path="Baum.webp", alt="Baum auf Straße") }}
-
-**Berufsverkehr blockiert**
 
 Im regen Berufsverkehr um kurz nach 17 Uhr wurden wir heute (9.1.25) am frühen Abend auf die Staatsstraße zwischen Kersbach und Effeltrich alarmiert.
 Nach den Regenfällen und dem Tauwetter der letzten Tage war der Boden in einem Waldstück scheinbar so aufgeweicht, dass ein Baum samt Wurzelteller durch Windböen entwurzelt auf die Straße stürzte.

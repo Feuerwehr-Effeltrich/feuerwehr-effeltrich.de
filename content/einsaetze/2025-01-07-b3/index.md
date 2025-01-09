@@ -8,8 +8,6 @@ image = "Einsatz.webp"
 
 {{ content_image(path="Einsatz.webp", alt="Einsatz") }}
 
-# Erster Einsatztag im neuen Jahr
-
 Für viele beginnt am 7.1.25 nach den Weihnachtstagen und dem Start ins neue Jahr auch das neue Arbeitsjahr, die Schule und der Kindergarten.
 Für die Effeltricher Brandschützer startete mit dem 7.1.25 in den ersten Minuten des Tages auch das neue Einsatzjahr.
 Der erste Einsatz in diesem Jahr führte uns nach Kersbach zum gemeldeten Kellerbrand.
