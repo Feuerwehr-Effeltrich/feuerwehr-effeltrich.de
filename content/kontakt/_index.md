@@ -19,4 +19,4 @@ template = "index.html"
 
 #### Schriftführer: [Thomas Stark](mailto:schriftfuehrer@feuerwehr-effeltrich.de)
 
-#### Kassier: [Christoph Steiner](mailto:kassier@feuerwehr-effeltrich.de)
+#### Kassier: [Georg Rauh](mailto:kassier@feuerwehr-effeltrich.de)
