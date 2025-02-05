@@ -40,4 +40,18 @@ Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Date
 Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
 Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
 
+###### Extenes Hosting
+
+Diese Website wird extern gehostet. Das externe Hosting erfolgt im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Onlineangebotes durch einen professionellen Dienstleister (Art. 6 Abs. 1 lit. f DSGVO). Soweit eine entsprechende Einwilligung eingeholt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z.B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung kann jederzeit widerrufen werden.
+
+Unser(e) Hoster wird (werden) Ihre Daten nur insoweit verarbeiten, als dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.
+
+Für unsere Website nutzen wir den Webhosting-Dienst Netlify. Dieser Dienst wird von dem US-amerikanischen Unternehmen Netlify Inc. mit Sitz in 2325 3rd Street, Suite 29, San Francisco, CA 94104, USA bereitgestellt. Netlify verarbeitet die Nutzerdaten unter anderem in den Vereinigten Staaten. Netlify ist ein aktiver Teilnehmer des EU-US Data Privacy Framework, das die sichere und ordnungsgemäße Übermittlung personenbezogener Daten von EU-Bürgern in die USA gewährleistet. Weitere Informationen finden Sie [hier](https://commission.europa.eu/document/fa09cbad-dd7d-4684-ae60-be03fcb0fddf_en).
+
+Darüber hinaus verwendet Netlify sogenannte Standardvertragsklauseln gemäß Art. 46 Abs. 2 und 3 DSGVO. Bei diesen Standardvertragsklauseln (Standard Contractual Clauses - SCC) handelt es sich um von der Europäischen Kommission entwickelte Muster, die sicherstellen sollen, dass Ihre Daten auch dann den europäischen Datenschutzstandards entsprechen, wenn sie in Drittländer wie die USA übermittelt und dort gespeichert werden. Mit dem EU-US-Datenschutzrahmen und den Standardvertragsklauseln verpflichtet sich Netlify zur Einhaltung der europäischen Datenschutzstandards bei der Verarbeitung Ihrer Daten, auch wenn diese in den USA gespeichert, verarbeitet und verwaltet werden. Diese Klauseln basieren auf einem Durchführungsbeschluss der Europäischen Kommission. Den Beschluss und die entsprechenden Standardvertragsklauseln finden Sie unter anderem [hier](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de).
+
+Netlify stellt darüber hinaus einen [Vertrag zur Auftragsverarbeitung gem. Art. 28 DSGVO](https://www.netlify.com/pdf/netlify-dpa.pdf) zur Verfügung, der die datenschutzrechtliche Grundlage unserer Geschäftsbeziehung mit Netlify bildet und auf die EU-Standardvertragsklauseln verweist.
+
+Weitere Informationen zu den Daten, die bei der Nutzung von Netlify verarbeitet werden, finden Sie in den [Datenschutzbestimmungen](https://www.netlify.com/privacy/).
+
 *Impressum erstellt mithilfe des [Generators der Kanzlei Hasselbach](https://impressum-generator.de).*
