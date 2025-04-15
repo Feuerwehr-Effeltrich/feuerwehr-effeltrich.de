@@ -1,4 +1,4 @@
-base_url = "/"
+base_url = "https://feuerwehr-effeltrich.de"
 compile_sass = true
 build_search_index = true
 
