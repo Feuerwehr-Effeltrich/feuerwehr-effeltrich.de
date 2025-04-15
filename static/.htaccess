@@ -7,7 +7,4 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 RewriteCond %{HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
-# HSTS
-Header always set Strict-Transport-Security "max-age=31536000"
-
 ErrorDocument 404 /404.html
