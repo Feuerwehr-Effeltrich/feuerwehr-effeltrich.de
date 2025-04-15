@@ -37,13 +37,11 @@ Mit „Meine Pegel“ hat die Bund/Länder-Arbeitsgemeinschaft Wasser (LAWA) ein
 
 Die App „Meine Pegel“ wurde aus Mitteln des Länderfinanzierungsprogramms „Wasser, Boden und Abfall“ gefördert und ist für die Betriebssysteme Android, iOS und WindowsPhone verfügbar. Sie kann über die jeweiligen App-Stores installiert werden.
 
-### [Bundespolizei Bayern](https://x.com/bpol_by)
+### [Polizei Bayern](https://www.polizei.bayern.de/)
 
-Die Bundespolizei in Bayern nutzt X (ehemals Twitter) vor allem, wenn größere Einsätze in Bayern stattfinden, zum Beispiel während des G7-Gipfels auf Schloss Elmau.
+Für aktuelle Nachrichten, Warnungen und Ereignisse der Polizei Bayern.
 
-### [Polizei Bayern](https://x.com/polby_1)
-
-Weil nicht alle Präsidien einen eigenen X-Account betreiben, können sie bei größeren Ereignissen diesen landesweiten Account nutzen.
+Die [Bundespolizei Bayern](https://x.com/bpol_by) nutzt X (ehemals Twitter) vor allem, wenn größere Einsätze in Bayern stattfinden, zum Beispiel während des G7-Gipfels auf Schloss Elmau.
 
 ### [BR24](https://www.br.de/nachrichten/)
 
@@ -53,5 +51,5 @@ Bei BR24 finden Sie alle aktuellen Informationen und Links zu den Hintergründen
 
 Auch hier Infos entweder auf der [Website](https://www.bbk.bund.de/DE/Home/home_node.html) oder auf [X](https://x.com/bbk_bund).
 
-### [Bundesministerium des Innern und für Heimat](https://x.com/BMI_Bund)
+### [Bundesministerium des Innern und für Heimat](https://www.bmi.bund.de/)
 
