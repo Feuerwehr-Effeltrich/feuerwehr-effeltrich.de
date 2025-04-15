@@ -40,6 +40,7 @@ Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Date
 Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
 Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
 
+<!--
 ###### Extenes Hosting
 
 Diese Website wird extern gehostet. Das externe Hosting erfolgt im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Onlineangebotes durch einen professionellen Dienstleister (Art. 6 Abs. 1 lit. f DSGVO). Soweit eine entsprechende Einwilligung eingeholt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z.B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung kann jederzeit widerrufen werden.
@@ -53,5 +54,6 @@ Darüber hinaus verwendet Netlify sogenannte Standardvertragsklauseln gemäß Ar
 Netlify stellt darüber hinaus einen [Vertrag zur Auftragsverarbeitung gem. Art. 28 DSGVO](https://www.netlify.com/pdf/netlify-dpa.pdf) zur Verfügung, der die datenschutzrechtliche Grundlage unserer Geschäftsbeziehung mit Netlify bildet und auf die EU-Standardvertragsklauseln verweist.
 
 Weitere Informationen zu den Daten, die bei der Nutzung von Netlify verarbeitet werden, finden Sie in den [Datenschutzbestimmungen](https://www.netlify.com/privacy/).
+-->
 
 *Impressum erstellt mithilfe des [Generators der Kanzlei Hasselbach](https://impressum-generator.de).*

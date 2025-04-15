@@ -7,7 +7,7 @@
 
 Website für die [Freiwillige Feuerwehr Effeltrich](https://feuerwehr-effeltrich.de),
 bereitgestellt mittels [Zola](https://getzola.org/) und dem [Toucan Theme](https://toucan.coinduf.eu/).
-Deployment erfolgt mittels [netlify](https://www.netlify.com/). Einen Uptime-Monitor von UptimeRobot gibt es [hier](https://stats.uptimerobot.com/H8G5AKCxnv).
+Deployment erfolgt mittels SFTP bei [Strato](https://strato.de/). Einen Uptime-Monitor von UptimeRobot gibt es [hier](https://stats.uptimerobot.com/H8G5AKCxnv).
 
 ![Logo](/static/logo-hq.png)
 
