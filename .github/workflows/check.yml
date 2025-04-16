@@ -15,7 +15,7 @@ jobs:
             submodules: recursive
         - uses: taiki-e/install-action@v2
           with:
-            tool: zola@0.19.2
+            tool: zola@0.20.0
         - name: Check internal
           run: zola check --skip-external-links
         - name: Check external (warning only)
