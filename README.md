@@ -1,4 +1,5 @@
 ![Zola Check](https://github.com/Feuerwehr-Effeltrich/feuerwehr-effeltrich.de/actions/workflows/check.yml/badge.svg)
+![Strato Deploy](https://github.com/Feuerwehr-Effeltrich/feuerwehr-effeltrich.de/actions/workflows/deploy.yml/badge.svg)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ed633b0e-accf-461a-b99b-d685c6fb2e3e/deploy-status)](https://app.netlify.com/sites/feuerwehr-effeltrich/deploys)
 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m798326144-52ff09adc025c3e21a1bb8a5)
 ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m798326144-52ff09adc025c3e21a1bb8a5?label=uptime%20(30d))
@@ -7,7 +8,11 @@
 
 Website für die [Freiwillige Feuerwehr Effeltrich](https://feuerwehr-effeltrich.de),
 bereitgestellt mittels [Zola](https://getzola.org/) und dem [Toucan Theme](https://toucan.coinduf.eu/).
-Deployment erfolgt mittels SFTP bei [Strato](https://strato.de/). Einen Uptime-Monitor von UptimeRobot gibt es [hier](https://stats.uptimerobot.com/H8G5AKCxnv).
+Deployment erfolgt mittels SFTP bei [Strato](https://strato.de/).
+
+Im [Test Branch](https://github.com/Feuerwehr-Effeltrich/feuerwehr-effeltrich.de/tree/test) werden größere Neuerungen getestet. Die [Testseite](https://feuerwehr.hesiboch.de) wird bei [Netlify](https://netlify.com) gehostet.
+
+Einen Uptime-Monitor von UptimeRobot gibt es [hier](https://stats.uptimerobot.com/H8G5AKCxnv).
 
 ![Logo](/static/logo-hq.png)
 

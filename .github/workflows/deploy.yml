@@ -1,4 +1,4 @@
-name: Deploy Zola Site via SFTP
+name: Strato Deploy
 
 on:
   push:
