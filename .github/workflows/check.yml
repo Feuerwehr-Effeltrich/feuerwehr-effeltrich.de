@@ -16,5 +16,7 @@ jobs:
         - uses: taiki-e/install-action@v2
           with:
             tool: zola@0.19.2
-        - name: Check
-          run: zola check
+        - name: Check internal
+          run: zola check --skip-external-links
+        - name: Check external (warning only)
+          run: zola check || exit 78
