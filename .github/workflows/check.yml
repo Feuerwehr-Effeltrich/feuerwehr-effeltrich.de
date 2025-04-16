@@ -18,5 +18,5 @@ jobs:
             tool: zola@0.20.0
         - name: Check internal
           run: zola check --skip-external-links
-        - name: Check external (warning only)
-          run: zola check || exit 78
+        - name: Check external (email report only)
+          run: zola check || exit 0
