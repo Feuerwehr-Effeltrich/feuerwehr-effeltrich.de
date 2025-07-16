@@ -3,7 +3,7 @@ title = "Brand 3: Heißer Draht"
 description = "Richtung Gaiganz"
 
 [extra]
-image = "Baum.webp"
+image = "Isolierung.webp"
 +++
 
 {{ content_image(path="Isolierung.webp", alt="Isolierung") }}

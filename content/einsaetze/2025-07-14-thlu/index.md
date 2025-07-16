@@ -3,7 +3,7 @@ title = "THL Unwetter: Mehrere Einsätze"
 description = "Regen bringt nicht immer nur Segen"
 
 [extra]
-image = "Baum.webp"
+image = "Warnwetter.webp"
 +++
 
 {{ content_image(path="Warnwetter.webp", alt="Warnwetter") }}
