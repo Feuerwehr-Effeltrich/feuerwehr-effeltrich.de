@@ -6,7 +6,7 @@ description = "Eilige Türöffnung"
 image = "Auto.webp"
 +++
 
-{{ content_image(path="Auto.webp", alt="Unfallauto") }}
+{{ content_image(path="Auto.webp", alt="Symbolbild Feuerwehrauto") }}
 
 Aufgrund eines medizinischen Notfalls konnte eine ältere Dame am Dienstagmorgen ihre Wohnungstüre nicht mehr selbstständig öffnen. Damit der Rettungsdienst zur Versorgung seiner Patientin in die Wohnung gelangen konnte, wurden die Feuerwehren aus Effeltrich und Poxdorf alarmiert.
 
