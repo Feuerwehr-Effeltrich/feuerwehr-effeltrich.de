@@ -1,6 +1,6 @@
 +++
 title = "THL Rettungskorb: Unterstützung"
-description = "Oberdorf"
+description = "Medizinischer Notfall"
 
 [extra]
 image = "Drehleiter.webp"

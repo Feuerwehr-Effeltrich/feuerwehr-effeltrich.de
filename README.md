@@ -12,7 +12,7 @@ Deployment erfolgt mittels SFTP bei [Strato](https://strato.de/).
 
 Im [Test Branch](https://github.com/Feuerwehr-Effeltrich/feuerwehr-effeltrich.de/tree/test) werden größere Neuerungen getestet. Die [Testseite](https://feuerwehr.hesiboch.de) wird bei [Netlify](https://netlify.com) gehostet.
 
-Einen Uptime-Monitor von UptimeRobot gibt es [hier](https://stats.uptimerobot.com/H8G5AKCxnv).
+Einen Uptime-Monitor von UptimeRobot gibt es [hier](http://status.feuerwehr-effeltrich.de/).
 
 ![Logo](/static/logo-hq.png)
 
