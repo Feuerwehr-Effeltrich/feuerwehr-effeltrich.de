@@ -6,11 +6,14 @@ import Base from '../layouts/Base.astro';
   title="Verein"
   description="Der Förderverein der Freiwilligen Feuerwehr Effeltrich – Satzung, Beitragsordnung und Informationen zur Mitgliedschaft."
 >
-  <div class="max-w-3xl mx-auto px-4 py-10">
-    <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100">Förderverein</h1>
-    <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">Feuerwehr Effeltrich e. V.</p>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <div class="flex items-center gap-3 mb-1">
+      <div class="w-1 h-7 bg-brand rounded-sm shrink-0"></div>
+      <h1 class="text-3xl font-display font-bold uppercase tracking-wide text-gray-900 dark:text-white">Förderverein</h1>
+    </div>
+    <p class="ml-4 mt-2 text-base text-gray-500 dark:text-gray-400">Feuerwehr Effeltrich e. V.</p>
 
-    <div class="mt-8 prose prose-gray dark:prose-invert max-w-none prose-a:text-brand">
+    <div class="mt-8 prose prose-gray dark:prose-invert max-w-none prose-a:text-brand prose-headings:font-display prose-headings:uppercase prose-headings:tracking-wide">
 
       <h2>Was ist der Förderverein?</h2>
       <p>
@@ -46,10 +49,10 @@ import Base from '../layouts/Base.astro';
           { rolle: 'Schriftführer', name: 'Thomas Stark', mail: 'schriftfuehrer@feuerwehr-effeltrich.de' },
           { rolle: 'Kassier', name: 'Christoph Steiner', mail: 'kassier@feuerwehr-effeltrich.de' },
         ].map(({ rolle, name, mail }) => (
-          <div class="rounded-lg border border-gray-200 dark:border-gray-700 p-4 bg-white dark:bg-gray-900">
-            <dt class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">{rolle}</dt>
-            <dd class="mt-1 font-medium text-gray-900 dark:text-gray-100">
-              <a href={`mailto:${mail}`} class="text-brand hover:underline">{name}</a>
+          <div class="rounded-xl border border-gray-200 dark:border-gray-800/50 p-4 bg-white dark:bg-[#1A1816]">
+            <dt class="text-[10px] font-bold uppercase tracking-[0.12em] text-gray-400 dark:text-gray-500">{rolle}</dt>
+            <dd class="mt-1 font-semibold text-gray-900 dark:text-white">
+              <a href={`mailto:${mail}`} class="hover:text-brand transition-colors">{name}</a>
             </dd>
           </div>
         ))}

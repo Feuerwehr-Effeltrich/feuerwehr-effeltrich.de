@@ -27,35 +27,39 @@ const dateFormatted = entry.data.date.toLocaleDateString('de-DE', {
   description={entry.data.description}
   ogImage={entry.data.image?.src}
 >
-  <article class="max-w-3xl mx-auto px-4 py-10">
-    <nav class="mb-6 text-sm text-gray-500 dark:text-gray-400" aria-label="Breadcrumb">
-      <a href="/einsaetze/" class="hover:text-brand transition-colors">Einsätze</a>
-      <span class="mx-2" aria-hidden="true">›</span>
-      <span class="text-gray-900 dark:text-gray-100">{entry.data.title}</span>
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <nav class="mb-8 text-sm" aria-label="Breadcrumb">
+      <a href="/einsaetze/" class="inline-flex items-center gap-1.5 text-gray-500 dark:text-gray-400 hover:text-brand transition-colors font-medium">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        Alle Einsätze
+      </a>
     </nav>
 
     <header>
-      <time datetime={entry.data.date.toISOString()} class="text-sm font-medium text-brand uppercase tracking-wide">
+      <time datetime={entry.data.date.toISOString()} class="inline-block text-[10px] font-bold tracking-[0.1em] uppercase bg-brand text-white px-2.5 py-1 rounded">
         {dateFormatted}
       </time>
-      <h1 class="mt-2 text-3xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
+      <h1 class="mt-4 font-display font-bold uppercase tracking-tight text-gray-900 dark:text-white leading-tight" style="font-size: clamp(1.9rem, 5vw, 2.75rem);">
         {entry.data.title}
       </h1>
       {entry.data.description && (
-        <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">{entry.data.description}</p>
+        <p class="mt-3 text-lg text-gray-500 dark:text-gray-400 leading-relaxed">{entry.data.description}</p>
       )}
     </header>
 
-    <div class="mt-8 prose prose-gray dark:prose-invert max-w-none
-      prose-img:rounded-xl prose-img:shadow-sm prose-img:w-full
+    <div class="mt-10 prose prose-gray dark:prose-invert max-w-none
+      prose-img:rounded-xl prose-img:shadow-md prose-img:w-full
       prose-a:text-brand prose-a:no-underline hover:prose-a:underline
+      prose-headings:font-display prose-headings:uppercase prose-headings:tracking-wide
     ">
       <Content />
     </div>
 
-    <div class="mt-10 pt-6 border-t border-gray-200 dark:border-gray-800">
-      <a href="/einsaetze/" class="inline-flex items-center gap-2 text-brand hover:text-brand-dark font-medium transition-colors text-sm">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <div class="mt-12 pt-6 border-t border-gray-200 dark:border-gray-800">
+      <a href="/einsaetze/" class="inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold transition-colors text-sm group">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="transition-transform group-hover:-translate-x-0.5">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
         Zurück zu allen Einsätzen
