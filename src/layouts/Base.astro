@@ -1,0 +1,105 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  noindex?: boolean;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description = 'Freiwillige Feuerwehr Effeltrich – Einsatzberichte, Informationen und Kontakt.',
+  noindex = false,
+  ogImage = '/images/FWGH.webp',
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const fullTitle = title === 'Startseite'
+  ? 'Freiwillige Feuerwehr Effeltrich'
+  : `${title} – Freiwillige Feuerwehr Effeltrich`;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="Feuerwehr Effeltrich – Einsätze" href="/rss.xml" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site)} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="de_DE" />
+  </head>
+  <body class="min-h-screen flex flex-col bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans">
+    <slot name="header">
+      <header class="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 sticky top-0 z-10">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+          <a href="/" class="flex items-center gap-3 text-brand hover:text-brand-dark transition-colors shrink-0" aria-label="Zur Startseite">
+            <img src="/logo-lq.webp" alt="" width="40" height="40" class="w-10 h-10 object-contain" />
+            <span class="font-bold text-gray-900 dark:text-gray-100 leading-tight hidden sm:block text-sm">
+              Freiwillige Feuerwehr<br />Effeltrich
+            </span>
+          </a>
+
+          <nav aria-label="Hauptnavigation" class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <a href="/einsaetze/" class="text-gray-700 dark:text-gray-300 hover:text-brand dark:hover:text-brand transition-colors">Einsätze</a>
+            <a href="/jugendfeuerwehr/" class="text-gray-700 dark:text-gray-300 hover:text-brand dark:hover:text-brand transition-colors">Jugendfeuerwehr</a>
+            <a href="/verein/" class="text-gray-700 dark:text-gray-300 hover:text-brand dark:hover:text-brand transition-colors">Verein</a>
+            <a href="/was-ist-wenn/" class="text-gray-700 dark:text-gray-300 hover:text-brand dark:hover:text-brand transition-colors">Was ist wenn?</a>
+          </nav>
+
+          <details class="md:hidden relative">
+            <summary class="cursor-pointer list-none flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 select-none p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Navigation öffnen">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+              Menü
+            </summary>
+            <nav
+              aria-label="Hauptnavigation mobil"
+              class="absolute right-0 top-full mt-1 w-52 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg py-1 z-20"
+            >
+              <a href="/einsaetze/" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-brand transition-colors">Einsätze</a>
+              <a href="/jugendfeuerwehr/" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-brand transition-colors">Jugendfeuerwehr</a>
+              <a href="/verein/" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-brand transition-colors">Verein</a>
+              <a href="/was-ist-wenn/" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-brand transition-colors">Was ist wenn?</a>
+            </nav>
+          </details>
+        </div>
+      </header>
+    </slot>
+
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <footer class="border-t border-gray-200 dark:border-gray-800 py-6 mt-12">
+      <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500 dark:text-gray-400">
+        <span>© {new Date().getFullYear()} Freiwillige Feuerwehr Effeltrich</span>
+        <div class="flex items-center gap-4">
+          <a href="/rss.xml" class="hover:text-brand transition-colors flex items-center gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <circle cx="5" cy="19" r="1"></circle>
+              <path d="M4 4a16 16 0 0 1 16 16"></path>
+              <path d="M4 11a9 9 0 0 1 9 9"></path>
+            </svg>
+            RSS
+          </a>
+          <a href="/impressum/" class="hover:text-brand transition-colors">Impressum</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'einsaetze'>;
+}
+
+const { entry } = Astro.props;
+const slug = entry.id.replace('/index.md', '');
+
+const dateFormatted = entry.data.date.toLocaleDateString('de-DE', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<article class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden bg-white dark:bg-gray-900 hover:shadow-md dark:hover:shadow-gray-900 transition-shadow">
+  {entry.data.image && (
+    <a href={`/einsaetze/${slug}/`} tabindex="-1" aria-hidden="true">
+      <Image
+        src={entry.data.image}
+        alt=""
+        width={600}
+        height={338}
+        class="w-full aspect-video object-cover"
+        loading="lazy"
+      />
+    </a>
+  )}
+  <div class="p-4">
+    <time datetime={entry.data.date.toISOString()} class="text-xs font-medium text-brand uppercase tracking-wide">
+      {dateFormatted}
+    </time>
+    <h2 class="mt-1 text-lg font-semibold leading-snug">
+      <a href={`/einsaetze/${slug}/`} class="text-gray-900 dark:text-gray-100 hover:text-brand dark:hover:text-brand transition-colors">
+        {entry.data.title}
+      </a>
+    </h2>
+    {entry.data.description && (
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{entry.data.description}</p>
+    )}
+  </div>
+</article>

@@ -12,16 +12,23 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
 
-    - name: Install Zola
-      uses: taiki-e/install-action@v2
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
       with:
-        tool: zola@0.20.0
+        version: latest
 
-    - name: Build the Zola site
-      run: zola build
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: 'pnpm'
+
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
+
+    - name: Build
+      run: pnpm build
 
     - name: Deploy via SFTP
       uses: Dylan700/sftp-upload-action@latest
@@ -31,5 +38,5 @@ jobs:
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
         uploads: |
-            ./public/ => .
+            ./dist/ => .
         delete: 'true'

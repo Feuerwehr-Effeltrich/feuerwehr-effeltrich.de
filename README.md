@@ -1,4 +1,4 @@
-![Zola Check](https://github.com/Feuerwehr-Effeltrich/feuerwehr-effeltrich.de/actions/workflows/check.yml/badge.svg)
+![Build Check](https://github.com/Feuerwehr-Effeltrich/feuerwehr-effeltrich.de/actions/workflows/check.yml/badge.svg)
 ![Strato Deploy](https://github.com/Feuerwehr-Effeltrich/feuerwehr-effeltrich.de/actions/workflows/deploy.yml/badge.svg)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ed633b0e-accf-461a-b99b-d685c6fb2e3e/deploy-status)](https://app.netlify.com/sites/feuerwehr-effeltrich/deploys)
 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m798326144-52ff09adc025c3e21a1bb8a5)
@@ -7,28 +7,37 @@
 # Feuerwehr-Effeltrich.de
 
 Website für die [Freiwillige Feuerwehr Effeltrich](https://feuerwehr-effeltrich.de),
-bereitgestellt mittels [Zola](https://getzola.org/) und dem [Toucan Theme](https://toucan.coinduf.eu/).
+gebaut mit [Astro](https://astro.build) und [Tailwind CSS](https://tailwindcss.com).
 Deployment erfolgt mittels SFTP bei [Strato](https://strato.de/).
-
-Im [Test Branch](https://github.com/Feuerwehr-Effeltrich/feuerwehr-effeltrich.de/tree/test) werden größere Neuerungen getestet. Die [Testseite](https://feuerwehr.hesiboch.de) wird bei [Netlify](https://netlify.com) gehostet.
 
 Einen Uptime-Monitor von UptimeRobot gibt es [hier](http://status.feuerwehr-effeltrich.de/).
 
-![Logo](/static/logo-hq.png)
+## Lokal ausführen
 
-# Dokumentation
+```sh
+pnpm install
+pnpm dev      # Entwicklungsserver auf http://localhost:4321
+pnpm build    # Produktionsbuild → dist/
+pnpm preview  # dist/ lokal servieren
+```
 
 ## Einsatz anlegen
 
-Als Hilfestellung kann man sich frühere Einsätze ansehen.
+1. Ordner unter `src/content/einsaetze/` anlegen (Format: `YYYY-MM-DD-typ`)
+2. Bilder hinzufügen (`.webp` empfohlen, z.B. mit [cwebp](https://developers.google.com/speed/webp/docs/cwebp))
+3. `index.md` anlegen:
 
-1. Ordner unter [/content/einsaetze](/content/einsaetze/) für den Einsatz anlegen (Format `<Jahr>-<Monat>-<Tag>-<Typ>`)
-2. Ggf. Bilder hinzufügen
-3. `index.md` anlegen
-4. Commit und Push, deploy erfolgt automatisch
+```yaml
+---
+title: "Einsatz-Titel"
+description: "Kurzbeschreibung"
+date: YYYY-MM-DD
+image: ./Bildname.webp
+---
 
-## Tipps
+Text des Einsatzberichts.
 
-- Bilder als webp formatieren, zb mit [cwebp](https://developers.google.com/speed/webp/docs/cwebp), Standardeinstellungen reichen aus
-- [PageSpeed Insights](https://pagespeed.web.dev/) als Hilfe, um Geschwindigkeit, Barrierefreiheit und SEO zu prüfen
-- [Google Search Console](https://search.google.com/search-console) um Impressionen und CTR zu prüfen. Nur Statistiken der Google-Suche, da die Website selbst prinzipiell keine Tracker verwendet
+![Bildbeschreibung](./Bildname.webp)
+```
+
+4. Commit und Push – Deployment erfolgt automatisch.

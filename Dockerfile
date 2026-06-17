@@ -1,9 +1,14 @@
-FROM ghcr.io/getzola/zola:v0.20.0 AS zola
+FROM node:22-slim AS build
 
-COPY . /project
-WORKDIR /project
-RUN ["zola", "build"]
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
+WORKDIR /app
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
+
+COPY . .
+RUN pnpm build
 
 FROM ghcr.io/static-web-server/static-web-server:latest
 WORKDIR /
-COPY --from=zola /project/public /public
+COPY --from=build /app/dist /public

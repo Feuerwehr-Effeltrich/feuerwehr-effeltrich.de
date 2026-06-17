@@ -1,2 +1,3 @@
-public/
-static/processed_images/
+dist/
+node_modules/
+.astro/

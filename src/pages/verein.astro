@@ -1,0 +1,88 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Verein"
+  description="Der Förderverein der Freiwilligen Feuerwehr Effeltrich – Satzung, Beitragsordnung und Informationen zur Mitgliedschaft."
+>
+  <div class="max-w-3xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100">Förderverein</h1>
+    <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">Feuerwehr Effeltrich e. V.</p>
+
+    <div class="mt-8 prose prose-gray dark:prose-invert max-w-none prose-a:text-brand">
+
+      <h2>Was ist der Förderverein?</h2>
+      <p>
+        Der Feuerwehr Effeltrich e. V. ist ein eingetragener Verein, der die Freiwillige Feuerwehr Effeltrich
+        ideell und finanziell unterstützt. Der Verein ist offen für alle, die die Arbeit der Feuerwehr
+        fördern möchten – auch ohne selbst aktiver Feuerwehrmann oder Feuerwehrfrau zu sein.
+      </p>
+
+      <h2>Aktive Wehr und Förderverein – was ist der Unterschied?</h2>
+      <p>
+        Die <strong>aktive Wehr</strong> besteht aus ausgebildeten Einsatzkräften, die bei Bränden, Unfällen
+        und anderen Notfällen ausrücken. Sie absolvieren regelmäßige Lehrgänge und Übungen und stehen rund
+        um die Uhr für die Bevölkerung bereit.
+      </p>
+      <p>
+        Der <strong>Förderverein</strong> hat keine Einsatzfunktion. Seine Mitglieder unterstützen die Feuerwehr
+        durch Beiträge und Spenden – zum Beispiel für neue Ausrüstung, Fahrzeuge oder die Ausgestaltung
+        von Gemeinschaftsveranstaltungen. Mitglied kann jede Person werden, die hinter der Arbeit der
+        Feuerwehr steht.
+      </p>
+
+      <h2>Mitglied werden</h2>
+      <p>
+        Eine Mitgliedschaft im Förderverein ist für alle offen. Die Beitragsordnung regelt die
+        jährlichen Mitgliedsbeiträge. Bei Interesse wende dich an den Vereinsvorstand.
+      </p>
+
+      <h2>Vorstand</h2>
+      <dl class="not-prose grid sm:grid-cols-2 gap-3 mt-4">
+        {[
+          { rolle: '1. Vorsitzender', name: 'Peter Nögel', mail: 'vorstand@feuerwehr-effeltrich.de' },
+          { rolle: '2. Vorsitzender', name: 'Peter Lepper', mail: 'vorstand@feuerwehr-effeltrich.de' },
+          { rolle: 'Schriftführer', name: 'Thomas Stark', mail: 'schriftfuehrer@feuerwehr-effeltrich.de' },
+          { rolle: 'Kassier', name: 'Christoph Steiner', mail: 'kassier@feuerwehr-effeltrich.de' },
+        ].map(({ rolle, name, mail }) => (
+          <div class="rounded-lg border border-gray-200 dark:border-gray-700 p-4 bg-white dark:bg-gray-900">
+            <dt class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">{rolle}</dt>
+            <dd class="mt-1 font-medium text-gray-900 dark:text-gray-100">
+              <a href={`mailto:${mail}`} class="text-brand hover:underline">{name}</a>
+            </dd>
+          </div>
+        ))}
+      </dl>
+
+      <h2 class="mt-8">Satzung und Beitragsordnung</h2>
+      <div class="not-prose flex flex-col sm:flex-row gap-3">
+        <a
+          href="/documents/181202_FFW_Effeltrich_Satzung.pdf"
+          download
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-brand hover:text-brand transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Satzung (PDF)
+        </a>
+        <a
+          href="/documents/181202_Beitrag_FFW-Effeltrich.pdf"
+          download
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-brand hover:text-brand transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Beitragsordnung (PDF)
+        </a>
+      </div>
+
+    </div>
+  </div>
+</Base>
