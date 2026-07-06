@@ -10,7 +10,7 @@ feed_filenames = ["rss.xml"]
 author = "Feuerwehr Effeltrich"
 
 [markdown]
-highlight_code = false
+# highlight_code = false
 lazy_async_image = true
 
 [slugify]
