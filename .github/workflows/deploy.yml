@@ -23,13 +23,15 @@ jobs:
     - name: Build the Zola site
       run: zola build
 
-    - name: Deploy via SFTP
-      uses: Dylan700/sftp-upload-action@latest
-      with:
-        server: ${{ secrets.FTP_DOMAIN }}
-        port: ${{ secrets.FTP_PORT }}
-        username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        uploads: |
-            ./public/ => .
-        delete: 'true'
+    - name: Deploy via rsync over SSH
+      run: |
+        sudo apt-get install -y sshpass
+        time sshpass -p "$FTP_PASSWORD" rsync -az --delete --stats \
+          --out-format="%f (%l bytes)" \
+          -e "ssh -p $FTP_PORT -o StrictHostKeyChecking=no" \
+          ./public/ "$FTP_USER@$FTP_DOMAIN:zola/"
+      env:
+        FTP_USER: ${{ secrets.FTP_USER }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        FTP_DOMAIN: ${{ secrets.FTP_DOMAIN }}
+        FTP_PORT: ${{ secrets.FTP_PORT }}
