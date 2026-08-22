@@ -18,15 +18,14 @@ jobs:
     - name: Install Zola
       uses: taiki-e/install-action@v2
       with:
-        tool: zola@0.20.0
+        tool: zola@0.22.1
 
     - name: Build the Zola site
       run: zola build
 
     - name: Deploy via rsync over SSH
       run: |
-        sudo apt-get install -y sshpass
-        time sshpass -p "$FTP_PASSWORD" rsync -az --delete --stats \
+        sshpass -p "$FTP_PASSWORD" rsync -az --delete --stats \
           --out-format="%f (%l bytes)" \
           -e "ssh -p $FTP_PORT -o StrictHostKeyChecking=no" \
           ./public/ "$FTP_USER@$FTP_DOMAIN:zola/"
